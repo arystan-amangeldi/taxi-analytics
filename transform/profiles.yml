@@ -1,0 +1,18 @@
+taxi_analytics:
+  target: dev
+
+  outputs:
+    dev:
+      type: clickhouse
+      driver: http
+      host: 127.0.0.1
+      port: 8123
+      user: taxi
+      password: "{{ env_var('TAXI_CH_PASSWORD') }}"
+      schema: analytics
+      secure: false
+      threads: 1
+
+      custom_settings:
+        join_use_nulls: 1
+        max_threads: 2
