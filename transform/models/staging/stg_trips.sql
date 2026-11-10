@@ -15,6 +15,8 @@ WITH typed AS (
         total_amount AS total_amount_usd,
         payment_type,
         source_file,
+        source_sha256,
+        source_row_number,
         loaded_at
 
     FROM {{ source('raw', 'trips') }}
