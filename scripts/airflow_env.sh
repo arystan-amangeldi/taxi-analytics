@@ -1,0 +1,5 @@
+export TAXI_PROJECT_ROOT="/workspaces/taxi-analytics"
+export AIRFLOW_HOME="$TAXI_PROJECT_ROOT/data/airflow"
+export AIRFLOW__CORE__DAGS_FOLDER="$TAXI_PROJECT_ROOT/dags"
+export AIRFLOW__CORE__LOAD_EXAMPLES=False
+export AIRFLOW__CORE__PARALLELISM=1

@@ -1,7 +1,10 @@
 .venv/
+.venv-dbt/
+.venv-airflow/
 __pycache__/
 data/
-.venv-dbt/
+data/airflow/
+data/fail_trip_load
 transform/target/
 transform/logs/
 transform/.user.yml
