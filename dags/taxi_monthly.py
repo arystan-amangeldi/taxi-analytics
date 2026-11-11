@@ -134,4 +134,15 @@ with DAG(
         do_xcom_push=False,
     )
 
-    period >> download_sources >> load_trips >> load_weather >> build_models
+    publish_report = BashOperator(
+        task_id="publish_report",
+        bash_command=(
+            '"$PROJECT_ROOT/.venv/bin/python" publish_reporting.py'
+        ),
+        cwd=PROJECT_ROOT,
+        env=task_env,
+        append_env=True,
+        do_xcom_push=False,
+    )
+
+    period >> download_sources >> load_trips >> load_weather >> build_models >> publish_report
