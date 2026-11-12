@@ -1,2 +1,2 @@
 # taxi-analytics
-Taxi analytics warehouse using Python, PostgreSQL, ClickHouse, dbt and Airflow
+Taxi analytics warehouse (9М+ records) using Python, PostgreSQL, ClickHouse, dbt and Airflow
