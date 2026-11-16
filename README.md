@@ -3,7 +3,7 @@ Batch ELT taxi analytics warehouse for **9.55 million NYC yellow taxi trips**, u
 
 The project combines January–March 2024 trip data with taxi zones and daily NYC weather.
 
-Link to the dataset: https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
+Link to the dataset (PARQUET): https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
 
 
 ## Start services
