@@ -1,5 +1,5 @@
 # taxi-analytics
-Batch ELT analytics taxi analytics warehouse for **9.55 million NYC yellow taxi trips**, using Python, PostgreSQL, ClickHouse, dbt Airflow
+Batch ELT taxi analytics warehouse for **9.55 million NYC yellow taxi trips**, using Python, PostgreSQL, ClickHouse, dbt Airflow
 
 The project combines January–March 2024 trip data with taxi zones and daily NYC weather.
 
